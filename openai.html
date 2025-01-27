@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Interface</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            position: absolute;
+            right: 10px;
+            background-color: #2B3030;
+            color: #06d6a0;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .actions button {
+            background-color: #2B3030;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #444a4a;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9e9e9e;
+        }
+
+        .footer a {
+            color: #06d6a0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>What can I help with?</h1>
+
+    <div class="search-container">
+        <input type="text" placeholder="Message ChatGPT">
+        <button>&#x1F50D;</button> <!-- Search icon -->
+    </div>
+
+    <div class="actions">
+        <button>Help me write</button>
+        <button>Brainstorm</button>
+        <button>Get advice</button>
+        <button>Surprise me</button>
+        <button>Summarize text</button>
+    </div>
+
+    <div class="footer">
+        By messaging ChatGPT, you agree to our <a href="#">Terms</a> and have read our <a href="#">Privacy Policy</a>.
+    </div>
+</body>
+</html>
